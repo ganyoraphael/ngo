@@ -1,0 +1,174 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.logo-header {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    max-width: 100px; /* Adjust as necessary */
+    margin-right: 10px; /* Adjust spacing between logo and title */
+}
+
+h1 {
+    font-size: 1.5rem; /* Adjust as necessary */
+    margin: 0;
+    color: #333; /* Adjust as necessary */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+/* Parallax Section */
+.parallax {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    text-align: center;
+    color: white;
+}
+
+/* Content Sections */
+.content-section {
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    color: white;
+}
+
+/* Content styling for main sections */
+.content {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Style for buttons */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Zigzag layout styles */
+.zigzag-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+.zigzag-section:nth-child(odd) .container {
+    flex-direction: row-reverse;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-area, .image-area {
+    flex-basis: 50%;
+    padding: 1em;
+}
+
+.image-area img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+/* Semi-transparent background for text areas for readability */
+.text-area {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+}
+
+/* Style for buttons */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .text-area, .image-area {
+        flex-basis: 100%;
+        padding: 1em;
+    }
+    .image-area img {
+        width: 100%;
+    }
+    .zigzag-section:nth-child(odd) .container {
+        flex-direction: column;
+    }
+}
