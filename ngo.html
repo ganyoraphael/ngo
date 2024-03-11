@@ -5,11 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nephi Foundation - Creating a Better World</title>
     <link rel="stylesheet" href="styles/ngo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+</head>
+<body>
 </head>
 <body>
     <header>
-        <div class="container header-container">
-            <img src="images/logo.webp" alt="Nephi Foundation Logo" class="logo">
+        <div class="header-container">
+            <div class="logo-header">
+                <img src="images/logo.webp" alt="Nephi Foundation Logo" class="logo">
+                <h1>Nephi Foundation</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#mission">Our Mission</a></li>
@@ -20,7 +27,6 @@
             </nav>
         </div>
     </header>
-
     <main>
         <section class="parallax" id="hero" style="background-image:url('images/hero.webp');">
             <div class="hero-text">
@@ -30,44 +36,109 @@
             </div>
         </section>
 
-        <section id="mission" class="zigzag-section" style="background-image: url('images/regina.JPG');">
+        <div id="sticky-social-bar">
+            <a href="https://facebook.com" target="_blank" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-btn twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://plus.google.com" target="_blank" class="social-btn google"><i class="fab fa-google"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-btn linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-btn youtube"><i class="fab fa-youtube"></i></a>
+        </div>
+        
+
+
+
+        
+        
+
+        <section id="mission" class="zigzag-section">
             <div class="container content">
-                <h2>Our Mission</h2>
-                <p>To prevent teenage pregnancy and support young girls by focusing on education, health, and skills training. We are dedicated to breaking the cycle of poverty and enabling a brighter future for the next generation.</p>
+                <div class="text-area">
+                    <h2>Our Mission</h2>
+                    <p>To prevent teenage pregnancy and support young girls by focusing on education, health, and skills training. We are dedicated to breaking the cycle of poverty and enabling a brighter future for the next generation. To prevent teenage pregnancy and support young girls by focusing on education, health, and skills training. We are dedicated to breaking the cycle of poverty and enabling a brighter future for the next generation. </p>
+                </div>
+                <div class="image-area">
+                    <img src="images/tina.jpg" alt="Our Mission">
+                </div>
             </div>
         </section>
 
-        <section id="programs" class="zigzag-section" style="background-image: url('images/Screenshot\ 2024-03-04\ at\ 2.43.04\ PM.png');">
+        <section id="programs" class="zigzag-section">
             <div class="container content">
-                <h2>Our Programs</h2>
-                <div class="program-details">
+                <div class="image-area">
+                    <img src="images/regina.JPG" alt="Our Programs">
+                </div>
+                <div class="text-area">
+                    <h2>Our Programs</h2>
                     <h3>Educational Workshops</h3>
                     <p>Interactive workshops to provide young girls with comprehensive knowledge about personal health, rights, and choices.</p>
-                    
                     <h3>Mentorship</h3>
                     <p>A one-to-one mentorship scheme pairing girls with inspiring role models to guide them on their path to success.</p>
-
                     <h3>Skill Development</h3>
                     <p>Vocational training programs to equip young women with practical skills for the workforce.</p>
                 </div>
             </div>
         </section>
 
-        <section id="donate" class="zigzag-section" style="background-image: url('images/pic4.webp');">
+        <div class="slideshow-container">
+            <!-- First Slide -->
+            <div class="mySlides fade">
+                <img src="images/tina.jpg" style="width:100%">
+                <div class="text-overlay">
+                    <div class="slide-text">We Put Smiles On the Face of Young Ones.<br>You Can be Part of the big Change</div>
+                    <a href="#donate" class="slide-button">How We Help</a>
+                </div>
+            </div>
+        
+            <!-- Second Slide -->
+            <div class="mySlides fade">
+                <img src="images/regina.JPG" style="width:100%">
+                <div class="text-overlay">
+                    <div class="slide-text">Have I done Any Good in The World Today.<br>Join The Moving Train</div>
+                    <a href="#donate" class="slide-button">How We Help</a>
+                </div>
+            </div>
+        
+            <!-- Third Slide -->
+            <div class="mySlides fade">
+                <img src="images/Screenshot 2024-03-04 at 2.43.04 PM.png" style="width:100%">
+                <div class="text-overlay">
+                    <div class="slide-text">Have I done Any Good in The World Today.<br>Join The Moving Train</div>
+                    <a href="#donate" class="slide-button">How We Help</a>
+                </div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+
+        <section id="donate" class="zigzag-section">
             <div class="container content">
-                <h2>Support Our Cause</h2>
-                <p>Your generosity enables us to continue our vital work. Every donation, big or small, makes a significant difference in the lives of these young girls. Join us in our mission — your support is their future.</p>
-                <a href="#" class="btn">Donate Now</a>
+                <div class="text-area">
+                    <h2>Support Our Cause</h2>
+                    <p>Your generosity enables us to continue our vital work. Every donation, big or small, makes a significant difference in the lives of these young girls. Join us in our mission — your support is their future.</p>
+                    <a href="#" class="btn">Donate Now</a>
+                </div>
+                <div class="image-area">
+                    <img src="images/pic4.webp" alt="Support Our Cause">
+                </div>
             </div>
         </section>
+
     </main>
 
     <footer>
-        <div class="container">
+        <div class="footer-container">
             <p>&copy; 2024 Nephi Foundation. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="scripts/ngo.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
